@@ -55,7 +55,7 @@ app.get('/producto/:id', (req, res) => {
 })
 
 
-app.get('/producto/buscar/:termino',verificaToken, (req, res) => {
+app.get('/producto/buscar/:termino', (req, res) => {
 
     let termino = req.params.termino;
     //para buscar, tenemos que mandar una (expresion regular)
